@@ -1,0 +1,39 @@
+/* App.css */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%; /* Ensure the full height of the screen is covered */
+}
+
+body {
+  background-color: #F1F2F2;
+  margin: 0;
+  padding: 0;
+  background-image: url('./assets/Holberton_wallpaper.png'); /* Path to your background image */
+  background-size: contain; /* Resize the image while maintaining its aspect ratio */
+  background-position: center; /* Center the image horizontally and vertically */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-attachment: fixed; /* Ensure the background stays fixed and non-scrollable */
+}
+
+/* Container for centering image */
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full viewport height */
+}
+
+/* Style for the image */
+.hover-image {
+  width: 300px; /* Adjust width as needed */
+  height: auto; /* Maintain aspect ratio */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effect */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Default box shadow */
+}
+
+/* Hover effect */
+.hover-image:hover {
+  transform: scale(1.1); /* Scale up the image */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); /* Enhanced box shadow on hover */
+}
